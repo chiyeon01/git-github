@@ -1,0 +1,54 @@
+###Linux Command###
+
+
+
+○ git init : 현재 위치에 git 저장소 만듬
+
+
+○ git status : git 상태 확인
+
+
+○ git add 파일명 : 파일 스테이징
+
+    ● git add . : 수정한 파일들을 한번에 스테이징
+
+
+○ git commit -m 메세지 : 메세지 남기며 커밋
+
+
+○ git commit -am 메세지 : 메세지 남기며 스테이징과 커밋
+
+
+○ git log : 커밋 정보 확인
+
+    ● git log --online                    : 한 줄에 한 커밋으로 정보 표현
+    ● git log --online --branches         : 브랜치마다 최신 커밋 표현
+    ● git log --online --branches --graph : 로그를 그래프 형식으로 표현
+
+
+○ git diff : 가장 최신 버전과 작업폴더의 차이를 보여줌
+
+
+○ git restore 파일명 : 작업트리에서 파일의 수정 내용 취소후 최신 버전으로 넘어감
+
+    ● git restore --staged 파일명 : 스테이징 취소
+
+
+○ git reset HEAD^ : 최신 커밋 취소
+
+
+○ git reset 커밋해시 : 특정 버전으로 되돌리고 이후 커밋 모두 취소
+
+
+○ git revert 커밋해시 : 지정한 커밋해시의 변경이력만 취소(최근 커밋으로 올리는 동시에 이전 커밋은 삭제하지 않음)
+
+
+○ git branch 브랜치명 : 새로운 브랜치 만듬
+
+    ● git branch -d 브랜치명 : 특정 브랜치 삭제(영구적으로 사라지는 것은 아님)
+
+
+○ git switch 브랜치명 : 특정 브랜치로 전환
+
+
+○ git merge 브랜치1 : 현재 브랜치에 브랜치1 병합
